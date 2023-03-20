@@ -11,16 +11,7 @@
 */
 :root {
     --cor1: rgb(169, 168, 168);
-    --cor2: #03258C;
-    --cor3: #0099DD;
-    --cor4: #FF9933;
-    --cor5: #A1C7E0;
-
-    --cor6: #252D59;
-    --cor7: #6078BF;
-    --cor8: #7DD952;
-    --cor9: #F26E22;
-    --cor10: #0D0D0D;
+    --cor2: rgba(0, 0, 0, 0.821);
 
 
     --font1: 'Edu NSW ACT Foundation', cursive;
@@ -34,100 +25,84 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    
-    background: url(../imagens/fundo-4.jpg) no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background: url(../imagens/fundo-2.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     
-    
 }
-body{
+.conteiner{
 
-}
-.container{
-    background: #00000096;
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 .conteudo{
+    background-color: var(--cor2);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    width: 80%;
+    height: 600px;
+    padding: 10px;
 }
 header{
-    background: rgba(0, 0, 0, 0.600);
-    display: flex;
-    min-width: 300px;
-    max-width:1000px;
-    margin: auto;
+    background-color: var(--cor2);
+    
+}
+header > h1{
     padding: 10px;
-}
-header >h1{
-    font-family: var(--font1);
+    text-align: center;
     color: var(--cor1);
 }
-#burger{
-    display: block;
-    color: var(--cor1);
-}
-mav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+nav{
+    display: inline-block;
 }
 nav > ul{
-    list-style: none;
-    display: flex;
+    list-style-type: none;
 }
-nav >ul > li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-nav > ul > li > a{
+nav > ul > li > a {
+    width: 150px;
+    display: inline-block;
+    padding: 10px;
     text-decoration: none;
     color: var(--cor1);
-    font-family: 'Open Sans', sans-serif;
-    font-weight:400;
-    font-size: .7em;
-}
-#icons{
-    font-weight: lighter;
     text-align: center;
+    border-top: 1px solid var(--cor1);
 }
-main{
-    background: rgba(0, 0, 0, 0.800);
-    min-width: 300px;
-    max-width:1000px;
-    height: 600px;
-    margin: 0 auto;
-    box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
+nav > ul > li > a:hover {
+    background-color: rgba(169, 168, 168, 0.300);
+}
+#burger{
     color: var(--cor1);
+    display: block;
     padding: 10px;
 }
-
-main h1{
+main {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+main > div > h1{
     font-family: var(--font3);
-    padding-top:250px;
-    padding-bottom:20px ;
+    padding: 20px;
 }
-main p{
+main > div > p {
+    padding-bottom: 20px;
     font-family: var(--font1);
-    margin-bottom: 20px;
 }
-main a{
-    width: 80px;
+main > div > a {
     text-decoration: none;
-    font-family: var(--font1);
-    font-weight: bold;
     color: var(--cor1);
     border: 1px solid var(--cor1);
-    border-radius: 15px;
-    padding: 5px 30px;
-    cursor: pointer;
+    padding: 5px 60px;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 1.3em;
+    border-radius: 20px;
 }
-main a:hover{
-    background: rgba(58, 58, 58, 0.8);
+main > div > a:hover{
+    background-color: rgba(169, 168, 168, 0.300);
 }
