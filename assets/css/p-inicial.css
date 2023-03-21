@@ -24,67 +24,43 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    height: 100vh;
-    width: 100vw;
-    background: url(../imagens/fundo-2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
-}
-.conteiner{
-    background-color: #00000049;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-.conteudo{
-    background-color: var(--cor2);
+main {
+    width: 80%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 80%;
-    height: 600px;
-    padding: 10px;
-}
-header{
-    
-}
-header > h1{
-    padding: 10px;
-    text-align: center;
+
+    padding: 20px;
     color: var(--cor1);
 }
-nav{
-    display: none
+main > h1{
+    font-family: var(--font3);
+    padding: 20px;
 }
-nav > ul{
-    list-style-type: none;
+main > p {
+    padding-bottom: 20px;
+    font-family: var(--font1);
 }
-nav > ul > li > a {
-    width: 150px;
-    display: inline-block;
-    padding: 10px;
+main > a {
     text-decoration: none;
     color: var(--cor1);
-    text-align: center;
-    border-top: 1px solid var(--cor1);
+    border: 1px solid var(--cor1);
+    padding: 5px 60px;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 1.3em;
+    border-radius: 20px;
 }
-nav > ul > li > a:hover {
+main > a:hover{
     background-color: rgba(169, 168, 168, 0.300);
 }
-#burger{
+footer{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     color: var(--cor1);
-    width: 150px;
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-}
-span#burger:hover{
-    background-color: rgba(169, 168, 168, 0.300);
-}
-#icons{
     text-align: center;
 }
