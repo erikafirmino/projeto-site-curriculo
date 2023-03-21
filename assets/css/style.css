@@ -27,8 +27,8 @@
 body{
     height: 100vh;
     width: 100vw;
-    background: url(../imagens/fundo-2.jpg) no-repeat;
-    background-size: cover;
+    background: url(../imagens/fundo-3.jpg) no-repeat;
+    background-size:cover;
     background-position: center center;
     
 }
@@ -47,9 +47,6 @@ body{
     width: 80%;
     height: 80%;
     padding: 10px;
-}
-header{
-    
 }
 header > h1{
     padding: 10px;

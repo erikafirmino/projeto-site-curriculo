@@ -27,7 +27,7 @@
 main {
     width: 80%;
     position: absolute;
-    top: 60%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -36,11 +36,16 @@ main {
 }
 main > h1{
     font-family: var(--font3);
-    padding: 20px;
+    font-size: 3em;
+    padding-bottom: 20px;
+
 }
 main > p {
-    padding-bottom: 20px;
     font-family: var(--font1);
+    font-size: 1.3em;
+    padding-bottom: 30px;
+    
+
 }
 main > a {
     text-decoration: none;
@@ -55,12 +60,23 @@ main > a {
 main > a:hover{
     background-color: rgba(169, 168, 168, 0.300);
 }
+img{
+    display: inline-block;
+    width: 650px;
+    height: 450px;
+
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    
+}
 footer{
     position: absolute;
-    top: 90%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     color: var(--cor1);
-    text-align: center;
+    font-family: var(--font3);
+    font-size: 1em;
 }

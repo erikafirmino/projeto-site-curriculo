@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/p-inicial.css">
     <link rel="stylesheet" href="./assets/css/media-queries.css">
 </head>
-<body>
+<body onload="dataAtual()">
    <div class="container">
         <div class="conteudo">
             <header>
@@ -18,6 +18,11 @@
                <span id="burger" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
                 <nav id="menu">
                     <ul>
+                        <li>
+                            <a href="./index.html" rel="next" target="_self">
+                                <span class="material-symbols-outlined"> home </span> Home
+                            </a>
+                        </li>
                         <li>
                             <a href="./sobre.html" rel="next" target="_self"> 
                                 <span id="icons" class="material-symbols-outlined"> person </span> Sobre
@@ -43,12 +48,13 @@
             <main>
                 <h1> Olá, sou Erika!</h1>
                 <p>
-                    Este site tem como objetivo, demonstrar um pouco de meus conhecimento adquiridos ao logo de 6 meses de estudo. 
+                    Este site tem como objetivo, demonstrar um pouco de meus conhecimento <br>
+                    adquiridos ao logo de 6 meses de estudo. 
                 </p>
                 <a href="./sobre.html" rel="next" target="_self" >Sobre mim</a>
-                <span id="date"></span>
+                <img src="./assets/imagens/imagem-inicio-2.png" alt="">
             </main>
-            <footer id="date">data e hora</footer>
+            <footer id="msg" ></footer>
         </div>
     </div>
     <script src="/assets/js/index.js"></script>
