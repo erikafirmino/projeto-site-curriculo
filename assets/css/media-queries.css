@@ -2,6 +2,23 @@
 
 
 @media screen and (min-width: 768px) {
+    .conteiner{
+        background-color: #00000049;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+    .conteudo{
+        background-color: var(--cor2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        width: 90%;
+        height: 90%;
+        padding: 10px;
+    }
     span#burguer {
         display: none;
     }
@@ -16,4 +33,6 @@
         width: 90%;
         height: 90%;
     }
+    
+    
 }
