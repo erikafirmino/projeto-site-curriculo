@@ -27,7 +27,7 @@
 main {
     width: 80%;
     position: absolute;
-    top: 95%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
